@@ -1,0 +1,48 @@
+header{ 
+    color: #000000;
+    text-align: center;
+    padding-top: 0px;
+    z-index: 1000;
+    nav ul{
+        list-style-type: none;
+        padding-top: 20px;
+        li{
+            display: inline;
+            padding: 10px;
+            a{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                color: #6A8C47;
+            }
+            }
+        }
+    }
+
+    .banner-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+        .banner-image{
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+        display: block;
+        }
+    .banner-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0);
+        padding: 20px;
+        text-align: center;
+    }
+    .menu{
+        position: sticky;
+    }
+
+}
