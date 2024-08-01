@@ -1,52 +1,53 @@
 .novedades {
-    text-align: center;
+  text-align: center;
 }
 .email-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-input, textarea {
-    width: 100%; /* Ancho del input y textarea */
-    padding: 30px; /* Espacio interno */
-    margin: 5px 0; /* Espacio externo */
-    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-    border: 2px solid #ccc; /* Borde del input y textarea */
-    border-radius: 4px; /* Bordes redondeados */
+input,
+textarea {
+  width: 100%; /* Ancho del input y textarea */
+  padding: 30px; /* Espacio interno */
+  margin: 5px 0; /* Espacio externo */
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+  border: 2px solid #ccc; /* Borde del input y textarea */
+  border-radius: 4px; /* Bordes redondeados */
 }
 
 /* Cambia el estilo del input y textarea cuando están en foco */
-input:focus, textarea:focus {
-    border-color: #555; /* Cambia el color del borde */
-    outline: none; /* Elimina el contorno por defecto del navegador */
+input:focus,
+textarea:focus {
+  border-color: #555; /* Cambia el color del borde */
+  outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
-.email{ 
-    width: 50%; /* Ancho del input y textarea */
-    padding: 10px; /* Espacio interno */
-    padding-bottom: 60px;
-    margin: 8px 0; /* Espacio externo */
-    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-    border-radius: 4px; /* Bordes redondeados */
-    display: flex;
-    gap: 10px
-
+.email {
+  width: 50%; /* Ancho del input y textarea */
+  padding: 10px; /* Espacio interno */
+  padding-bottom: 60px;
+  margin: 8px 0; /* Espacio externo */
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+  border-radius: 4px; /* Bordes redondeados */
+  display: flex;
+  gap: 10px;
 }
 
 .boton {
-    background-color: #98ba76;
+  background-color: #98ba76;
 }
 
-.textoContacto{
-    text-align: center;
-    padding-bottom: 30px;
+.textoContacto {
+  text-align: center;
+  padding-bottom: 30px;
 }
 .contacto {
-    width: 50%; /* Ancho del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Espacio interno */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Color de fondo */
+  width: 50%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
 }

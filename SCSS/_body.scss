@@ -1,18 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #ffffff;
-    font-family:Arial, Helvetica, sans-serif;
-    h1{
-        font-size: 90px;
-    }
-    form input{
-        border-radius: 4px;
-        padding: 4px 7px;
-    }
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  h1 {
+    font-size: 90px;
+  }
+  form input {
+    border-radius: 4px;
+    padding: 4px 7px;
+  }
+  h2 .subtitulo {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 }
-

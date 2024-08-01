@@ -1,15 +1,14 @@
-
-.contenido{
+.contenido {
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 70px;
+  .preguntasF {
+    margin-top: 100px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 250px;
-    margin-bottom: 70px;
-    .preguntasF{
-        margin-top: 100px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .preguntas { 
-        text-align: center;
-        padding: 6px;
-    }
+  }
+  .preguntas {
+    text-align: center;
+    padding: 6px;
+  }
 }

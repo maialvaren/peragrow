@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +10,11 @@ body {
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body h1 {
   font-size: 90px;
 }
+
 body form input {
   border-radius: 4px;
   padding: 4px 7px;
@@ -23,34 +26,42 @@ header {
   padding-top: 0px;
   z-index: 1000;
 }
+
 header nav ul {
   list-style-type: none;
   padding-top: 20px;
 }
+
 header nav ul li {
   display: inline;
   padding: 10px;
 }
+
 header nav ul li a {
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
 }
+
 header nav ul li a:hover {
   color: #6A8C47;
 }
+
 header .banner-container {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
+
 header .banner-image {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+  object-fit: cover;
+  /* Mantiene la proporción de la imagen sin distorsionarla */
   display: block;
 }
+
 header .banner-text {
   position: absolute;
   top: 50%;
@@ -60,6 +71,7 @@ header .banner-text {
   padding: 20px;
   text-align: center;
 }
+
 header .menu {
   position: sticky;
 }
@@ -76,7 +88,7 @@ header .menu {
   padding-bottom: 20px;
   padding-right: 150px;
   padding-top: 100px;
-  text-align:  left;
+  text-align: left;
 }
 
 .texto-productos {
@@ -131,11 +143,13 @@ header .menu {
   margin-top: 250px;
   margin-bottom: 70px;
 }
+
 .contenido .preguntasF {
   margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .contenido .preguntas {
   text-align: center;
   padding: 6px;
@@ -156,28 +170,43 @@ header .menu {
   margin: 20px 0;
 }
 
-input, textarea {
-  width: 100%; /* Ancho del input y textarea */
-  padding: 30px; /* Espacio interno */
-  margin: 5px 0; /* Espacio externo */
-  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  border: 2px solid #ccc; /* Borde del input y textarea */
-  border-radius: 4px; /* Bordes redondeados */
+input,
+textarea {
+  width: 100%;
+  /* Ancho del input y textarea */
+  padding: 30px;
+  /* Espacio interno */
+  margin: 5px 0;
+  /* Espacio externo */
+  box-sizing: border-box;
+  /* Asegura que el padding y el border se incluyan en el ancho total */
+  border: 2px solid #ccc;
+  /* Borde del input y textarea */
+  border-radius: 4px;
+  /* Bordes redondeados */
 }
 
 /* Cambia el estilo del input y textarea cuando están en foco */
-input:focus, textarea:focus {
-  border-color: #555; /* Cambia el color del borde */
-  outline: none; /* Elimina el contorno por defecto del navegador */
+input:focus,
+textarea:focus {
+  border-color: #555;
+  /* Cambia el color del borde */
+  outline: none;
+  /* Elimina el contorno por defecto del navegador */
 }
 
 .email {
-  width: 50%; /* Ancho del input y textarea */
-  padding: 10px; /* Espacio interno */
+  width: 50%;
+  /* Ancho del input y textarea */
+  padding: 10px;
+  /* Espacio interno */
   padding-bottom: 60px;
-  margin: 8px 0; /* Espacio externo */
-  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  border-radius: 4px; /* Bordes redondeados */
+  margin: 8px 0;
+  /* Espacio externo */
+  box-sizing: border-box;
+  /* Asegura que el padding y el border se incluyan en el ancho total */
+  border-radius: 4px;
+  /* Bordes redondeados */
   display: flex;
   gap: 10px;
 }
@@ -192,17 +221,25 @@ input:focus, textarea:focus {
 }
 
 .contacto {
-  width: 50%; /* Ancho del contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  padding: 20px; /* Espacio interno */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
-  border-radius: 8px; /* Bordes redondeados */
-  background-color: #f9f9f9; /* Color de fondo */
+  width: 50%;
+  /* Ancho del contenedor */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
+  padding: 20px;
+  /* Espacio interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra para el contenedor */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  background-color: #f9f9f9;
+  /* Color de fondo */
 }
 
 .containerSN {
-  width: 100%; /* Ajusta el contenedor para que ocupe el 100% del ancho disponible */
-  margin-bottom: 20px; /* Opcional: Añade un margen inferior para separar el contenedor de otros elementos */
+  width: 100%;
+  /* Ajusta el contenedor para que ocupe el 100% del ancho disponible */
+  margin-bottom: 20px;
+  /* Opcional: Añade un margen inferior para separar el contenedor de otros elementos */
 }
 
 .imgSobreNosotros {
@@ -221,11 +258,13 @@ input:focus, textarea:focus {
 }
 
 .masAsesoramientoTexto {
-  flex: 1; /* Esto asegura que el párrafo tome el resto del espacio disponible */
+  flex: 1;
+  /* Esto asegura que el párrafo tome el resto del espacio disponible */
 }
 
 .masAsesoramientoTitulo {
-  margin-bottom: 20px; /* Añade un margen inferior para separar el título del contenido */
+  margin-bottom: 20px;
+  /* Añade un margen inferior para separar el título del contenido */
 }
 
 .masAsesoramientoTitulo {
@@ -243,15 +282,20 @@ input:focus, textarea:focus {
 
 .contenedor {
   display: grid;
-  gap: 20px; /* Espacio entre las imágenes */
-  justify-items: center; /* Centra las imágenes horizontalmente */
-  padding: 20px; /* Espacio alrededor del contenedor */
+  gap: 20px;
+  /* Espacio entre las imágenes */
+  justify-items: center;
+  /* Centra las imágenes horizontalmente */
+  padding: 20px;
+  /* Espacio alrededor del contenedor */
 }
+
 .contenedor .contenedorCultivo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
 }
+
 .contenedor .contenedorCultivo .card .texto {
   text-align: center;
   font-size: small;
@@ -267,6 +311,7 @@ input:focus, textarea:focus {
   margin: 10px;
   opacity: 0.8;
 }
+
 .contenedor img:hover {
   opacity: 1;
   border: solid rgb(255, 255, 255) 2px;

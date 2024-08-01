@@ -1,131 +1,147 @@
 <!DOCTYPE html> <!-- esta etiqueta es la que define la version y estructura del documento-->
-<html lang="es"> 
-<head> 
+<html lang="es">
+
+<head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- insertando Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- agregando cdn animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- agregando aos animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--pegando link Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <!-- insertando archivo CSS-->
     <link rel="stylesheet" href="./css/style.css">
 
     <title>PERA | Growshop</title> <!-- esta etiqueta es la que le da el nombre a la web en la pestaña-->
     <link href="./Imagenes/logo3.png" rel="icon"> <!--icono de pestaña-->
 </head>
+
 <body> <!-- todo lo que pongamos adentro del body, es lo que va a ver el usuario-->
     <header>
         <div class="banner-container">
             <img src="./Imagenes/banner6.png" alt="Banner" class="banner-image">
-                <div class="banner-text">
-                    <h1>PERA<div>
+            <div class="banner-text">
+                <h1>PERA<div>
                         <span class="Growshop">Growshop</span>
-                    </h1></div>
-                </div>
-        <h2>Vivero Growshop Online | Asesoramiento de Cultivo</h2>
+                </h1>
+            </div>
+        </div>
+        <h2 class="subtitulo" data-aos="fade-down">Vivero Growshop Online | Asesoramiento de Cultivo</h2>
+
         <nav class="menu">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li> <a href="#nuestros-productos"> Nuestros Productos</a></li>
                 <li> <a href="#asesoramiento"> Asesoramiento</a></li>
-                <li><a href= "#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <div class="email-container">
-            <form class="email" action="form.php" method="POST"> 
-            <label class="" for=""></label>
-            <input type="text" name="nombre" id="nombre" placeholder="Email">
-        <input class="boton" type="submit" value="Quiero saber todas las novedades">
-        </form>
-    </div>
+            <form class="email" action="form.php" method="POST">
+                <label class="" for=""></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Email">
+                <input class="boton" type="submit" value="Quiero saber todas las novedades">
+            </form>
+        </div>
     </header>
-    
+
     <h3>
         <section>
             <img class="imgProductos" src="./Imagenes/nuestrosproductos1.png" align="left" alt="Productos">
         </section>
         <section class="productos">
-        <section id="nuestros-productos"> Nuestros Productos
+            <section id="nuestros-productos"> Nuestros Productos
     </h3>
-        <p class="texto-productos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ad accusamus ullam reprehenderit, ipsa obcaecati sit nesciunt, laboriosam deleniti, esse quidem! Tempora aperiam quo sint, totam hic libero harum facere?
+    <p class="texto-productos">Ofrecemos una amplia variedad de productos especializados para el cultivo de cannabis. Desde semillas de alta calidad y clones seleccionados hasta sustratos, fertilizantes orgánicos y sistemas de iluminación avanzada. También contamos con una selección de macetas, sistemas de riego y herramientas de jardinería diseñadas para optimizar el crecimiento y la salud de tus plantas. Descubrí nuestra colección y encontra todo lo que necesitas para llevar tu cultivo al siguiente nivel.
         </section>
-            <br>
-                <a href="/pages/mas-nuestros-productos.html"> Saber más </a>
+        <br>
+        <a href="/pages/mas-nuestros-productos.html"> Saber más </a>
         </br>
-        </p>
+    </p>
     <h3>
         <section>
             <img class="imgAsesoramiento" src="./Imagenes/asesoramiento1.png" align="right" alt="Asesoramiento">
         </section>
-    <section class="titulo-asesoramiento" id="asesoramiento"> Asesoramiento
+        <section class="titulo-asesoramiento" id="asesoramiento"> Asesoramiento
     </h3>
-    <p class="texto-asesoramiento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ad accusamus ullam reprehenderit, ipsa obcaecati sit nesciunt, laboriosam deleniti, esse quidem! Tempora aperiam quo sint, totam hic libero harum facere?
-            <br>
+    <p class="texto-asesoramiento">En PERA GROWSHOP, no solo te proporcionamos los mejores productos para el cultivo de cannabis, sino que también te ofrecemos el asesoramiento experto que necesitas para tener éxito. Nuestro equipo de especialistas está disponible para brindarte consejos sobre la germinación, el ciclo de crecimiento, la nutrición, la poda, la floración y el control de plagas. Ya seas un cultivador novato o un experto, estamos para ayudarte en cada etapa de tu cultivo, asegurándonos de que tengas los mejores resultados posibles.
+        <br>
         <a href="./pages/mas-asesoramiento.html"> Saber más </a>
-            </br>
+        </br>
     </p>
     </section>
-
-
-
-<h3>
+    <h3>
         <img class="imgNosotros" src="./Imagenes/nosotros1.png" align="left" alt="Sobre Nosotros">
-
-
-        <section class="titulo-nosotros" id="sobre-nosotros">Sobre Nosotros</h3>
-            <p class="texto-nosotros">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ad accusamus ullam reprehenderit, ipsa obcaecati sit nesciunt, laboriosam deleniti, esse quidem! Tempora aperiam quo sint, totam hic libero harum facere?
-            <br>
+        <section class="titulo-nosotros" id="sobre-nosotros">Sobre Nosotros
+    </h3>
+    <p class="texto-nosotros">PERA GROWSHOP nace de la pasión por las plantas y el cultivo responsable de cannabis. Nuestro objetivo es ofrecer productos de calidad y un servicio personalizado para fomentar un cultivo saludable y sostenible. Creemos que cada planta de cannabis tiene el poder de transformar un espacio y mejorar la calidad de vida, y estamos acá para ayudarte a hacer realidad ese sueño.
+        <br>
         <a href="./pages/mas-sobre-nosotros.html"> Saber más </a>
-            </br>
-            </p>
-        </section>
-        <div class="contenido">
-    <h3 class="preguntasF">PREGUNTAS FRECUENTES</h3>
+        </br>
+    </p>
+    </section>
+    <div class="contenido">
+        <h3 class="preguntasF">PREGUNTAS FRECUENTES</h3>
 
-    <details>
-        <summary class="preguntas">¿Cómo hago mi compra?</summary>
-        <p class="preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem voluptate dolorem iure rerum? Sed exercitationem eaque voluptatibus expedita, molestias labore tenetur modi cumque iure id, hic magnam velit voluptatem.</p>
-    </details>
+        <details>
+            <summary class="preguntas">¿Cómo hago mi compra?</summary>
+            <p class="preguntas">Hacer tu compra en PERA GROWSHOP es más fácil que cortar una flor de un día. Navegá por nuestra tienda online, elegí los productos que te gusten y agregalos al carrito. Una vez que tengas todo lo que necesitás, hacé clic en "Finalizar compra" y seguí los pasos para completar tu pedido. ¡Listo, ya tenés todo para tu cultivo!</p>
+        </details>
 
-    <details>
-        <summary class="preguntas">¿Cuáles son los medios de pago?</summary>
-        <p class="preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem voluptate dolorem iure rerum? Sed exercitationem eaque voluptatibus expedita, molestias labore tenetur modi cumque iure id, hic magnam velit voluptatem.</p>
-    </details>
-    
-    <details>
-        <summary class="preguntas">¿Cómo accedo a mi asesoría?</summary>
-        <p class="preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem voluptate dolorem iure rerum? Sed exercitationem eaque voluptatibus expedita, molestias labore tenetur modi cumque iure id, hic magnam velit voluptatem.</p>
-    </details>
+        <details>
+            <summary class="preguntas">¿Cuáles son los medios de pago?</summary>
+            <p class="preguntas">En PERA GROWSHOP aceptamos todos los medios de pago que te puedas imaginar: tarjeta de crédito, débito, transferencias bancarias y hasta pagos en efectivo a través de Rapipago y Pago Fácil. Así que no te preocupes, seguro encontrás la opción que mejor te convenga.</p>
+        </details>
 
-    <details>
-        <summary class="preguntas">¿Qué hago si el producto que quiero no se encuentra disponible?</summary>
-        <p class="preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem voluptate dolorem iure rerum? Sed exercitationem eaque voluptatibus expedita, molestias labore tenetur modi cumque iure id, hic magnam velit voluptatem.</p>
-    </details>
+        <details>
+            <summary class="preguntas">¿Cómo accedo a mi asesoría?</summary>
+            <p class="preguntas">Acceder a nuestra asesoría es tan sencillo como mandar un WhatsApp. Podés comunicarte con nosotros a través de nuestras redes sociales, por mail o directamente desde la web. Coordinamos una consulta y uno de nuestros expertos te va a guiar en todo lo que necesites para tus plantas.</p>
+        </details>
 
-    <details>
-        <summary class="preguntas">¿Cuál es la política de devolución?</summary>
-        <p class="preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem voluptate dolorem iure rerum? Sed exercitationem eaque voluptatibus expedita, molestias labore tenetur modi cumque iure id, hic magnam velit voluptatem.</p>
-    </details>
+        <details>
+            <summary class="preguntas">¿Qué hago si el producto que quiero no se encuentra disponible?</summary>
+            <p class="preguntas">Si el producto que buscás no está disponible, no te hagas problema. Podés dejarnos tu mail o número de teléfono y te avisamos ni bien lo tengamos en stock. También podés consultarnos por alternativas similares que pueden servirte para tu cultivo.</p>
+        </details>
+
+        <details>
+            <summary class="preguntas">¿Cuál es la política de devolución?</summary>
+            <p class="preguntas">En PERA GROWSHOP queremos que estés más que satisfecho con tu compra. Si por alguna razón no estás contento con lo que recibiste, podés devolver el producto en un plazo de 30 días, siempre y cuando esté en las mismas condiciones en las que te lo mandamos. Coordinamos la devolución y te reembolsamos el dinero o te cambiamos el producto, lo que prefieras.</p>
+        </details>
     </div>
 
 
     <p class="novedades">Ingresá tu mail para recibir todas las novedades</p>
 
     <div class="email-container">
-    <form class="novedades" action="form.php" method="POST"> 
+        <form class="novedades" action="form.php" method="POST">
 
-		<label for="Ingresá tu mail para recibir todas las novedades"></label>
-		<input type="text" name="nombre" id="nombre" placeholder="Email">
-		
+            <label for="Ingresá tu mail para recibir todas las novedades"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Email">
 
-    <input class="boton" type="submit" value="Enviar">
+
+            <input class="boton" type="submit" value="Enviar">
     </div>
     </form>
-</section>
+    </section>
 
-<footer class="pie">
+    <footer class="pie">
 
-    <h4>mail: </h4>
-    <h4>telefono</h4>
-</footer>
+        <h4>mail: </h4>
+        <h4>telefono</h4>
+    </footer>
+
+    <!-- link a Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({   easing: 'ease-out-back',duration: 2000});</script>
 
 </body>
+
 </html>
