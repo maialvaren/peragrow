@@ -25,7 +25,7 @@ textarea:focus {
 }
 
 .email {
-  width: 50%; /* Ancho del input y textarea */
+  min-width: 300px; /* Ancho del input y textarea */
   padding: 10px; /* Espacio interno */
   padding-bottom: 60px;
   margin: 8px 0; /* Espacio externo */
