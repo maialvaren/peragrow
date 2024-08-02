@@ -1,0 +1,14 @@
+.sobre--nosotros {
+  @extend .masAsesoramientoTitulo;
+}
+
+.texto-sobre-nosotros{
+  @extend .masAsesoramientoTexto
+}
+
+.carrusel{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 700px;
+}

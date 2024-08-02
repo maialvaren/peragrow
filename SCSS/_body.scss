@@ -14,9 +14,19 @@ body {
     border-radius: 4px;
     padding: 4px 7px;
   }
-  h2 .subtitulo {
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
+
+  h2 {
+    font-family: "Proza Libre", sans-serif;
+    font-size: 50px;
     font-style: normal;
+  }
+  
+  .subtitulo {
+    color: #889648;
+    text-shadow: 
+    -1px -1px 0 #52573F,  
+    2px -1px 0 #52573F,
+    -1px  1px 0 #52573F,
+    1px  1px 0 #52573F; /* Sombra de texto que actúa como borde */
   }
 }

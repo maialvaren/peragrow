@@ -20,7 +20,7 @@ textarea {
 /* Cambia el estilo del input y textarea cuando están en foco */
 input:focus,
 textarea:focus {
-  border-color: #555; /* Cambia el color del borde */
+  border-color: #52573F; /* Cambia el color del borde */
   outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
@@ -36,7 +36,8 @@ textarea:focus {
 }
 
 .boton {
-  background-color: #98ba76;
+  background-color: #889648;
+  color: #f9f9f9;
 }
 
 .textoContacto {
@@ -44,7 +45,7 @@ textarea:focus {
   padding-bottom: 30px;
 }
 .contacto {
-  width: 50%; /* Ancho del contenedor */
+  width: 500px;  /* Ancho del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   padding: 20px; /* Espacio interno */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */

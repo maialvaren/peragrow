@@ -1,19 +1,31 @@
-.imgProductos {
+.imgNosotros {
   width: 400px;
-  padding-left: 50px;
-  padding-right: 20px;
-}
-.productos {
   padding: 20px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-  padding-right: 150px;
-  padding-top: 100px;
-  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  padding-top: 30px;
 }
-.texto-productos {
+.titulo-nosotros {
+  margin-top: 100px;
+  margin-left: 30px;
+  padding-top: 130px;
+}
+.texto-nosotros {
+  margin-top: 20px;
   margin-right: 30px;
   margin-left: 30px;
+}
+
+.imgProductos {
+@extend .imgNosotros;
+}
+
+.productos {
+@extend .titulo-nosotros;
+}
+
+.texto-productos {
+  @extend .texto-nosotros;
 }
 
 .imgAsesoramiento {
@@ -37,20 +49,4 @@
   margin-left: 30px;
 }
 
-.imgNosotros {
-  width: 400px;
-  padding: 20px;
-  padding-left: 50px;
-  padding-bottom: 100px;
-  padding-top: 30px;
-}
-.titulo-nosotros {
-  margin-top: 100px;
-  margin-left: 30px;
-  padding-top: 130px;
-}
-.texto-nosotros {
-  margin-top: 20px;
-  margin-right: 30px;
-  margin-left: 30px;
-}
+

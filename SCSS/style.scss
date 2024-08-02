@@ -5,10 +5,12 @@
 @import "footer";
 @import "forms";
 @import "p-nosotros";
+@import "s-nosotros";
+
 
 .masAsesoramientoTitulo {
   text-align: center;
-  font-size: 2em;
+  font-size: 30px;
   margin-top: 20px;
 }
 
@@ -24,13 +26,15 @@
   gap: 20px; /* Espacio entre las imágenes */
   justify-items: center; /* Centra las imágenes horizontalmente */
   padding: 20px; /* Espacio alrededor del contenedor */
+  border: none;
   .contenedorCultivo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
+    border: none;
     .card .texto {
       text-align: center;
-      font-size: small;
+      overflow: hidden;
     }
   }
 }
@@ -41,12 +45,11 @@
   max-width: 300px;
   max-height: 300px;
   object-fit: cover;
-  margin: 10px;
-  margin: 10px;
   opacity: 0.8;
+  border: none;
   &:hover {
     opacity: 1;
-    border: solid rgb(255, 255, 255) 2px;
-    border-radius: 10px;
+    border: solid rgb(255, 255, 255) 15px;
+    border-radius: 5px;
   }
 }
