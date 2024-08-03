@@ -9,25 +9,55 @@ body {
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 body h1 {
   font-size: 90px;
 }
-
 body form input {
-  border-radius: 4px;
-  padding: 4px 7px;
+  padding: 4px 15px;
 }
-
 body h2 {
-  font-family: "Proza Libre", sans-serif;
-  font-size: 50px;
+  font-family: "Signika", sans-serif;
+  font-size: 45px;
+  margin: 0 auto;
   font-style: normal;
 }
-
 body .subtitulo {
-  color: #889648;
+  color: #6A8C48;
   text-shadow: -1px -1px 0 #52573F, 2px -1px 0 #52573F, -1px 1px 0 #52573F, 1px 1px 0 #52573F; /* Sombra de texto que actúa como borde */
+}
+
+.color-propio {
+  color: #52573F;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Tamaño de texto más pequeño para pantallas pequeñas */
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .subtitulo {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+/* Cambiar el color de fondo y el color del texto del botón del acordeón */
+.accordion-button {
+  color: rgb(0, 0, 0);
+}
+
+/* Cambiar el color de fondo del botón del acordeón cuando está colapsado */
+.accordion-button:not(.collapsed) {
+  background-color: #6A8C48; /* Verde más oscuro */
+  color: rgb(0, 0, 0);
+}
+
+/* Opcional: Cambiar el color de fondo y del texto cuando el botón está enfocado */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem #e0e7d9; /* Sombra verde */
 }
 
 header {
@@ -36,42 +66,34 @@ header {
   padding-top: 0px;
   z-index: 1000;
 }
-
 header nav ul {
   list-style-type: none;
   padding-top: 20px;
 }
-
 header nav ul li {
   display: inline;
   padding: 10px;
 }
-
 header nav ul li a {
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
 }
-
 header nav ul li a:hover {
-  color: #52573F;
+  color: #8C6B48;
 }
-
 header .banner-container {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-
 header .banner-image {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
   object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
   display: block;
 }
-
 header .banner-text {
   position: absolute;
   top: 50%;
@@ -81,7 +103,6 @@ header .banner-text {
   padding: 20px;
   text-align: center;
 }
-
 header .menu {
   position: sticky;
 }
@@ -90,12 +111,12 @@ header .menu {
   width: 400px;
   padding: 20px;
   padding-left: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 30px;
 }
 
 .titulo-nosotros, .productos {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 30px;
   padding-top: 130px;
 }
@@ -110,7 +131,7 @@ header .menu {
   width: 400px;
   padding: 20px;
   padding-right: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .titulo-asesoramiento {
@@ -128,18 +149,52 @@ header .menu {
   margin-left: 30px;
 }
 
+@media (max-width: 600px) {
+  .imgProductos {
+    width: 350px;
+    margin: auto 0px;
+  }
+  .productos {
+    text-align: center;
+  }
+  .texto-productos {
+    text-align: center;
+  }
+  .imgAsesoramiento {
+    width: 350px;
+    margin: auto 0px;
+  }
+  .titulo-asesoramiento {
+    text-align: center;
+    padding: 0px;
+  }
+  .texto-asesoramiento {
+    text-align: center;
+  }
+  .imgNosotros, .imgProductos {
+    width: 350px;
+    margin: auto 0px;
+  }
+  .titulo-nosotros, .productos {
+    text-align: center;
+    padding: 0px;
+  }
+  .texto-nosotros, .texto-productos {
+    text-align: center;
+    padding: 0px;
+  }
+}
 .contenido {
   text-align: center;
   margin-top: 250px;
   margin-bottom: 70px;
 }
-
 .contenido .preguntasF {
   margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
+  font-family: "Signika", sans-serif;
 }
-
 .contenido .preguntas {
   text-align: center;
   padding: 6px;
@@ -149,15 +204,12 @@ header .menu {
   margin-top: 100px;
   text-align: center;
 }
-
 .pie h4 {
   font-size: 16px;
 }
-
 .pie .sociales a {
   display: inline-block;
 }
-
 .pie .sociales img {
   width: 50px;
   height: auto;
@@ -165,13 +217,16 @@ header .menu {
 }
 
 .novedades {
+  margin-top: 50px;
   text-align: center;
 }
 
 .email-container {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+}
+.email-container .mail-input {
+  border-radius: 20px;
 }
 
 input,
@@ -180,14 +235,16 @@ textarea {
   padding: 30px; /* Espacio interno */
   margin: 5px 0; /* Espacio externo */
   box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  border: 2px solid #ccc; /* Borde del input y textarea */
-  border-radius: 4px; /* Bordes redondeados */
+  border: 2px solid #33372F; /* Borde del input y textarea */
+  border-radius: 20px; /* Bordes redondeados */
+  font-family: "Signika";
+  font-weight: bold;
 }
 
 /* Cambia el estilo del input y textarea cuando están en foco */
 input:focus,
 textarea:focus {
-  border-color: #52573F; /* Cambia el color del borde */
+  border-color: #8C6B48; /* Cambia el color del borde */
   outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
@@ -197,33 +254,66 @@ textarea:focus {
   padding-bottom: 60px;
   margin: 8px 0; /* Espacio externo */
   box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  border-radius: 4px; /* Bordes redondeados */
+  border-radius: 20px; /* Bordes redondeados */
   display: flex;
   gap: 10px;
 }
 
 .boton {
-  background-color: #889648;
-  color: #f9f9f9;
+  background-color: #33372F;
+  color: #ffffff;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  border-color: none;
+}
+.boton:hover {
+  background-color: #8C6B48;
+  border-color: #8C6B48;
 }
 
 .textoContacto {
+  font-family: "Signika", sans-serif;
+  font-size: 30px;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 20px;
+  margin: 0 auto;
+  font-style: normal;
 }
 
 .contacto {
   width: 500px; /* Ancho del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   padding: 20px; /* Espacio interno */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
-  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra para el contenedor */
+  border-radius: 20px; /* Bordes redondeados */
   background-color: #f9f9f9; /* Color de fondo */
 }
 
+.boton-mas {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #33372F;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.boton-mas:hover {
+  background-color: #8C6B48;
+}
+
+@media (max-width: 600px) {
+  .contacto {
+    width: 300px;
+  }
+  .textoContacto {
+    font-size: 22px;
+  }
+}
 .containerSN {
   width: 100%; /* Ajusta el contenedor para que ocupe el 100% del ancho disponible */
-  margin-bottom: 20px; /* Opcional: Añade un margen inferior para separar el contenedor de otros elementos */
+  margin-bottom: 20px;
 }
 
 .imgSobreNosotros {
@@ -247,6 +337,14 @@ textarea:focus {
   width: 700px;
 }
 
+@media (max-width: 600px) {
+  h2 .sobre--nosotros {
+    font-size: 22px;
+  }
+  .carrusel {
+    width: 350px;
+  }
+}
 .masAsesoramientoTitulo, .sobre--nosotros {
   text-align: center;
   font-size: 30px;
@@ -267,17 +365,14 @@ textarea:focus {
   padding: 20px; /* Espacio alrededor del contenedor */
   border: none;
 }
-
 .contenedor .contenedorCultivo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
   border: none;
 }
-
 .contenedor .contenedorCultivo .card .texto {
   text-align: center;
-  overflow: hidden;
 }
 
 .contenedor img {
@@ -285,16 +380,23 @@ textarea:focus {
   height: auto;
   max-width: 300px;
   max-height: 300px;
-  -o-object-fit: cover;
   object-fit: cover;
   opacity: 0.8;
   border: none;
 }
-
 .contenedor img:hover {
   opacity: 1;
   border: solid rgb(255, 255, 255) 15px;
   border-radius: 5px;
-} 
+}
+
+@media (max-width: 600px) {
+  .masAsesoramientoTitulo, .sobre--nosotros {
+    font-size: 22px;
+  }
+  .contenedor .card .texto {
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

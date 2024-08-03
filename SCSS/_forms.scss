@@ -1,10 +1,13 @@
 .novedades {
+  margin-top: 50px;
   text-align: center;
 }
 .email-container {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  .mail-input{
+    border-radius: 20px;
+  }
 }
 
 input,
@@ -13,14 +16,16 @@ textarea {
   padding: 30px; /* Espacio interno */
   margin: 5px 0; /* Espacio externo */
   box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  border: 2px solid #ccc; /* Borde del input y textarea */
-  border-radius: 4px; /* Bordes redondeados */
+  border: 2px solid #33372F; /* Borde del input y textarea */
+  border-radius: 20px; /* Bordes redondeados */
+  font-family: "Signika";
+  font-weight: bold;
 }
 
 /* Cambia el estilo del input y textarea cuando están en foco */
 input:focus,
 textarea:focus {
-  border-color: #52573F; /* Cambia el color del borde */
+  border-color: #8C6B48; /* Cambia el color del borde */
   outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
@@ -30,25 +35,60 @@ textarea:focus {
   padding-bottom: 60px;
   margin: 8px 0; /* Espacio externo */
   box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  border-radius: 4px; /* Bordes redondeados */
+  border-radius: 20px; /* Bordes redondeados */
   display: flex;
   gap: 10px;
 }
 
 .boton {
-  background-color: #889648;
-  color: #f9f9f9;
+  background-color: $color-input;
+  color: $texto-input;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  border-color: none;
+    &:hover {
+      background-color: $hover-color;
+      border-color: $hover-color;
+    }
 }
 
 .textoContacto {
+  font-family: "Signika", sans-serif;
+  font-size: 30px;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 20px;
+  margin: 0 auto;
+  font-style: normal;
 }
+
 .contacto {
   width: 500px;  /* Ancho del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   padding: 20px; /* Espacio interno */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
-  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra para el contenedor */
+  border-radius: 20px; /* Bordes redondeados */
   background-color: #f9f9f9; /* Color de fondo */
+}
+
+.boton-mas {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: $color-input;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+    &:hover {
+      background-color: $hover-color;
+    }
+}
+
+@media (max-width: 600px) {
+  .contacto{
+    width: 300px;
+  }
+  .textoContacto{
+    font-size: 22px;
+  }
 }

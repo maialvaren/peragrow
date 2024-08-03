@@ -1,3 +1,12 @@
+$color-titulo: #6A8C48;
+$color-body: #ffffff;
+$color-input: #33372F;
+$color-li: #8C6B48;
+$color-bordes-botones: #33372F;
+$sombra-titulo: #33372F;
+$texto-input: #ffffff;
+$hover-color: #8C6B48;
+
 @import "body";
 @import "header";
 @import "imagenes-y-textos";
@@ -34,7 +43,7 @@
     border: none;
     .card .texto {
       text-align: center;
-      overflow: hidden;
+      
     }
   }
 }
@@ -51,5 +60,14 @@
     opacity: 1;
     border: solid rgb(255, 255, 255) 15px;
     border-radius: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .masAsesoramientoTitulo{
+    font-size: 22px;
+  }
+  .contenedor .card .texto{
+    font-size: 10px;
   }
 }

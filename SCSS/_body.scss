@@ -5,28 +5,65 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: $color-body;
   font-family: Arial, Helvetica, sans-serif;
   h1 {
     font-size: 90px;
   }
   form input {
-    border-radius: 4px;
-    padding: 4px 7px;
+    padding: 4px 15px;
   }
 
   h2 {
-    font-family: "Proza Libre", sans-serif;
-    font-size: 50px;
+    font-family: "Signika", sans-serif;
+    font-size: 45px;
+    margin: 0 auto;
     font-style: normal;
   }
   
   .subtitulo {
-    color: #889648;
+    color: $color-titulo;
     text-shadow: 
     -1px -1px 0 #52573F,  
     2px -1px 0 #52573F,
     -1px  1px 0 #52573F,
     1px  1px 0 #52573F; /* Sombra de texto que actúa como borde */
+    
   }
+}
+
+.color-propio{
+  color: #52573F;
+}
+
+@media (max-width: 600px) {
+  body {
+      font-size: 14px; /* Tamaño de texto más pequeño para pantallas pequeñas */
+  }
+  h1 {
+      font-size: 22px;
+  }
+  .subtitulo {
+    font-size: 30px ;
+  }
+  h2 {
+      font-size: 18px;
+  }
+
+}
+
+/* Cambiar el color de fondo y el color del texto del botón del acordeón */
+.accordion-button {
+  color: rgb(0, 0, 0);
+}
+
+/* Cambiar el color de fondo del botón del acordeón cuando está colapsado */
+.accordion-button:not(.collapsed) {
+  background-color: $color-titulo; /* Verde más oscuro */
+  color: rgb(0, 0, 0);
+}
+
+/* Opcional: Cambiar el color de fondo y del texto cuando el botón está enfocado */
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem #e0e7d9; /* Sombra verde */
 }

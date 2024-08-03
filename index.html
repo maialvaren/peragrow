@@ -13,8 +13,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--pegando link Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=JetBrains+Mono:wght@700&family=Proza+Libre:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=JetBrains+Mono:wght@700&family=Proza+Libre:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=JetBrains+Mono:wght@700&family=Proza+Libre:wght@600&family=Signika:wght@300..700&display=swap" rel="stylesheet">
     <!-- insertando archivo CSS-->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -25,7 +28,7 @@
 <body> <!-- todo lo que pongamos adentro del body, es lo que va a ver el usuario-->
     <header>
         <div class="banner-container">
-            <img src="./Imagenes/banner6.png" alt="Banner" class="banner-image"></div>
+            <img src="./Imagenes/banner7.png" alt="Banner" class="banner-image"></div>
             <div class="banner-text">
                 <h1>PERA<div>
                         <span class="Growshop">Growshop</span></div>
@@ -44,8 +47,8 @@
         <div class="email-container">
             <form class="email" action="form.php" method="POST">
                 <label class="" for=""></label>
-                <input type="text" name="nombre" id="nombre" placeholder="Email">
-                <input class="boton" type="submit" value="Quiero saber todas las novedades">
+                <input type="text" name="nombre" id="nombre" placeholder="email" class="mail-input">
+                <input class="boton" type="submit" value="QUIERO SABER TODAS LAS NOVEDADES">
             </form>
         </div>
     </header>
@@ -55,9 +58,9 @@
         </section>
         <section class="productos" id="productos"> Nuestros Productos</section>
     </h3>
-    <p class="texto-productos">Ofrecemos una amplia variedad de productos especializados para el cultivo de cannabis. Desde semillas de alta calidad y clones seleccionados hasta sustratos, fertilizantes orgánicos y sistemas de iluminación avanzada. También contamos con una selección de macetas, sistemas de riego y herramientas de jardinería diseñadas para optimizar el crecimiento y la salud de tus plantas. Descubrí nuestra colección y encontra todo lo que necesitas para llevar tu cultivo al siguiente nivel.
+    <p class="texto-productos" data-aos="fade-down-right">Ofrecemos una amplia variedad de productos especializados para el cultivo de cannabis. Desde semillas de alta calidad y clones seleccionados hasta sustratos, fertilizantes orgánicos y sistemas de iluminación avanzada. También contamos con una selección de macetas, sistemas de riego y herramientas de jardinería diseñadas para optimizar el crecimiento y la salud de tus plantas. Descubrí nuestra colección y encontra todo lo que necesitas para llevar tu cultivo al siguiente nivel.
         <br>
-        <a href="./pages/mas-nuestros-productos.html"> Saber más </a>
+        <a href="./pages/mas-nuestros-productos.html" class="boton-mas"> Saber más </a>
     </p>
     <h3>
         <section>
@@ -65,56 +68,90 @@
         </section>
         <section class="titulo-asesoramiento" id="asesoramiento"> Asesoramiento</section>
     </h3>
-    <p class="texto-asesoramiento">En PERA GROWSHOP, no solo te proporcionamos los mejores productos para el cultivo de cannabis, sino que también te ofrecemos el asesoramiento experto que necesitas para tener éxito. Nuestro equipo de especialistas está disponible para brindarte consejos sobre la germinación, el ciclo de crecimiento, la nutrición, la poda, la floración y el control de plagas. Ya seas un cultivador novato o un experto, estamos para ayudarte en cada etapa de tu cultivo, asegurándonos de que tengas los mejores resultados posibles.
+    <p class="texto-asesoramiento" data-aos="fade-down-left">En PERA GROWSHOP, no solo te proporcionamos los mejores productos para el cultivo de cannabis, sino que también te ofrecemos el asesoramiento experto que necesitas para tener éxito. Nuestro equipo de especialistas está disponible para brindarte consejos sobre la germinación, el ciclo de crecimiento, la nutrición, la poda, la floración y el control de plagas. Ya seas un cultivador novato o un experto, estamos para ayudarte en cada etapa de tu cultivo, asegurándonos de que tengas los mejores resultados posibles.
         <br>
-        <a href="./pages/mas-asesoramiento.html"> Saber más </a>
+        <a href="./pages/mas-asesoramiento.html" class="boton-mas"> Saber más </a>
     </p>
     <h3>
         <img class="imgNosotros" src="./Imagenes/nosotros1.png" align="left" alt="Sobre Nosotros">
         <section class="titulo-nosotros" id="sobre-nosotros">Sobre Nosotros</section>
     </h3>
-    <p class="texto-nosotros">PERA GROWSHOP nace de la pasión por las plantas y el cultivo responsable de cannabis. Nuestro objetivo es ofrecer productos de calidad y un servicio personalizado para fomentar un cultivo saludable y sostenible. Creemos que cada planta de cannabis tiene el poder de transformar un espacio y mejorar la calidad de vida, y estamos acá para ayudarte a hacer realidad ese sueño.
+    <p class="texto-nosotros" data-aos="fade-down-right">PERA GROWSHOP nace de la pasión por las plantas y el cultivo responsable de cannabis. Nuestro objetivo es ofrecer productos de calidad y un servicio personalizado para fomentar un cultivo saludable y sostenible. Creemos que cada planta de cannabis tiene el poder de transformar un espacio y mejorar la calidad de vida, y estamos acá para ayudarte a hacer realidad ese sueño.
         <br>
-        <a href="./pages/mas-sobre-nosotros.html"> Saber más </a>
+        <a href="./pages/mas-sobre-nosotros.html" class="boton-mas"> Saber más </a>
     </p>
     
-    <div class="contenido">
-        <h3 class="preguntasF">PREGUNTAS FRECUENTES</h3>
+    <div class="accordion text-center w-50 mx-auto" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button y-3 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                ¿Cómo hago mi compra?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show p-3 text-center">
+            <div class="accordion-body p-3 text-center">
+                <strong>Hacer tu compra en PERA GROWSHOP es más fácil que cortar una flor de un día</strong>. Navegá por nuestra tienda online, elegí los productos que te gusten y agregalos al carrito. Una vez que tengas todo lo que necesitás, hacé clic en "Finalizar compra" y seguí los pasos para completar tu pedido. ¡Listo, ya tenés todo para tu cultivo!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              ¿Cuáles son los medios de pago?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                En PERA GROWSHOP <strong>aceptamos todos los medios de pago </strong> que te puedas imaginar: tarjeta de crédito, débito, transferencias bancarias y hasta pagos en efectivo a través de Rapipago y Pago Fácil. Así que no te preocupes, seguro encontrás la opción que mejor te convenga.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                ¿Cómo accedo a mi asesoría?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Acceder a nuestra asesoría <strong>es tan sencillo como mandar un WhatsApp</strong>. Podés comunicarte con nosotros a través de nuestras redes sociales, por mail o directamente desde la web. Coordinamos una consulta y uno de nuestros expertos te va a guiar en todo lo que necesites para tus plantas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                ¿Qué hago si el producto que quiero no se encuentra disponible?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Si el producto que buscás no está disponible, no te hagas problema. <strong>Podés dejarnos tu mail o número de teléfono y te avisamos ni bien lo tengamos en stock</strong>. También podés consultarnos por alternativas similares que pueden servirte para tu cultivo
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                ¿Cuál es la política de devolución?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                En PERA GROWSHOP queremos que estés más que satisfecho con tu compra. Si por alguna razón no estás contento con lo que recibiste, <strong>podés devolver el producto en un plazo de 30 días, siempre y cuando esté en las mismas condiciones en las que te lo mandamos</strong>. Coordinamos la devolución y te reembolsamos el dinero o te cambiamos el producto, lo que prefieras.
+              </div>
+            </div>
+          </div>
+      </div>
 
-        <details>
-            <summary class="preguntas">¿Cómo hago mi compra?</summary>
-            <p class="preguntas">Hacer tu compra en PERA GROWSHOP es más fácil que cortar una flor de un día. Navegá por nuestra tienda online, elegí los productos que te gusten y agregalos al carrito. Una vez que tengas todo lo que necesitás, hacé clic en "Finalizar compra" y seguí los pasos para completar tu pedido. ¡Listo, ya tenés todo para tu cultivo!</p>
-        </details>
 
-        <details>
-            <summary class="preguntas">¿Cuáles son los medios de pago?</summary>
-            <p class="preguntas">En PERA GROWSHOP aceptamos todos los medios de pago que te puedas imaginar: tarjeta de crédito, débito, transferencias bancarias y hasta pagos en efectivo a través de Rapipago y Pago Fácil. Así que no te preocupes, seguro encontrás la opción que mejor te convenga.</p>
-        </details>
-
-        <details>
-            <summary class="preguntas">¿Cómo accedo a mi asesoría?</summary>
-            <p class="preguntas">Acceder a nuestra asesoría es tan sencillo como mandar un WhatsApp. Podés comunicarte con nosotros a través de nuestras redes sociales, por mail o directamente desde la web. Coordinamos una consulta y uno de nuestros expertos te va a guiar en todo lo que necesites para tus plantas.</p>
-        </details>
-
-        <details>
-            <summary class="preguntas">¿Qué hago si el producto que quiero no se encuentra disponible?</summary>
-            <p class="preguntas">Si el producto que buscás no está disponible, no te hagas problema. Podés dejarnos tu mail o número de teléfono y te avisamos ni bien lo tengamos en stock. También podés consultarnos por alternativas similares que pueden servirte para tu cultivo.</p>
-        </details>
-
-        <details>
-            <summary class="preguntas">¿Cuál es la política de devolución?</summary>
-            <p class="preguntas">En PERA GROWSHOP queremos que estés más que satisfecho con tu compra. Si por alguna razón no estás contento con lo que recibiste, podés devolver el producto en un plazo de 30 días, siempre y cuando esté en las mismas condiciones en las que te lo mandamos. Coordinamos la devolución y te reembolsamos el dinero o te cambiamos el producto, lo que prefieras.</p>
-        </details>
-    </div>
-
-
-    <p class="novedades">Ingresá tu mail para recibir todas las novedades</p>
+    <p class="novedades">Ingresá tu mail para recibir todas las novedades:</p>
 
     <div class="email-container">
         <form class="novedades" action="form.php" method="POST">
 
             <label for="Ingresá tu mail para recibir todas las novedades"></label>
-            <input type="text" name="nombre" id="nombre" placeholder="Email">
+            <input type="text" name="nombre" id="nombre" placeholder="email" >
 
 
             <input class="boton" type="submit" value="Enviar">

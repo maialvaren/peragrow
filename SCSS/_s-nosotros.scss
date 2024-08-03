@@ -12,3 +12,12 @@
   margin: 0 auto;
   width: 700px;
 }
+
+@media (max-width: 600px) {
+  h2 .sobre--nosotros{
+    font-size: 22px;
+  }
+  .carrusel{
+    width: 350px;
+  }
+}
